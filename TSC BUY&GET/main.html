@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <script src="https://kit.fontawesome.com/f2ca46cdb8.js" crossorigin="anonymous"></script>
+    <title>TSC BUY&GET</title>
+</head>
+<body>
+ 
+    <div id = "header">
+        <br>
+        <hr>
+
+            <div id = "title">
+
+                <img src="TSC_BUY_GET_logo.png" id="logo" >
+
+                <p id = "webName"> TSC BUY&GET</p>
+
+                    <div id ="searchBar">
+
+                        <form action="/search" method="get">
+                            <input type="text" name="query" placeholder="Search..." required>
+                            <button type="submit">Search</button>
+                        </form>
+
+                    </div>
+
+                <button id="cart"> <i class="fa-duotone fa-solid fa-cart-arrow-down"></i> </button>
+
+            </div>
+
+
+            <div id="categories">
+
+                <hr>
+
+                <div id="buttons">
+
+                    <a href="#All"> <button id="allButton"> <p> All Products </p> </button> </a>
+                    <a href="#Uniforms"><button id="uniButton"> <p> Uniforms </p></button> </a>
+                    <a href="#SchoolSupplies"><button id="ssButton"> <p> School Supplies </p> </button> </a>
+
+                </div>
+
+            </div>
+            
+
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div id="advertisement">
+
+        <div id="adsText">
+            <!-- 
+            <h1 id="adsTitle"> Early Bird Discount! </h1>
+            <h2 id="adsSubTitle"> 10% OFF!</h2>
+            <p id="adsDescription"> Enroll for the next S.Y. as early as April and claim your early bird discount.</p>
+            -->
+
+            <button id="adsIMG"><img src="images/2.png" width=1400px height=auto></button>
+
+        </div>
+       
+    </div>
+
+        <br> <br>
+
+    <section id="All">
+
+        <div id="allProducts">
+
+            <h2 id="APTitle"> All Products</h2>
+
+            <br>
+
+            <div id="Items">
+
+
+                <!-- assorted acrylic paint-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/paint.avif" alt="Acrylic Paint"> <br>
+                            <div class="itemText">
+                            <h2>Acrylic Paint</h2> 
+                            <p>Php 45.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Acrylic Paint</h2> 
+                            <p>Php 45.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+                            <div id="sizes">
+                                <button class="opt">Red</button>
+                                <button class="opt">Blue</button>
+                                <button class="opt">Green</button>
+                                <button class="opt">Yellow</button>
+                                <button class="opt">Purple</button>
+                                <button class="opt">Orange</button>
+                            </div>
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Acrylic Paint', 45.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+                    
+                
+
+                <!-- brown folder-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/brown.jpg" alt="Brown Folder"> <br>
+                            <div class="itemText">
+                            <h2>Brown Folder</h2> 
+                            <p>Php 25.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2>Brown Folder</h2> 
+                            <p>Php 25.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+                            <div id="sizes">
+                                <button class="opt">Long</button>
+                                <button class="opt">Short</button>
+                            </div>
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Brown Folder', 25.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+
+
+                <!-- correction tape-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/correction.jpg" alt="Correction Tape"> <br>
+                            <div class="itemText">
+                            <h2>Correction Tape</h2> 
+                            <p>Php 30.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2>Correction Tape</h2> 
+                            <p>Php 30.00 | pcs</p>
+                            
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Correction Tape', 30.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+
+
+                <!-- crayons-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/crayons.jpg" alt="Crayons`"> <br>
+                            <div class="itemText">
+                            <h2>Crayons</h2> 
+                            <p>Php 50.00 | box</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Crayons</h2> 
+                            <p>Php 50.00 | box</p>
+                            
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Crayons', 50.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+
+
+                <!-- flexstick ballpen-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/ballpen.jpg" alt="Ballpen"> <br>
+                        <div class="itemText">
+                        <h2>Ballpen</h2> 
+                        <p>Php 15.00 | pen</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Ballpen</h2> 
+                        <p>Php 15.00 | pen</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Ballpen', 15.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                    
+
+
+                <!-- glue gun-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/gluegun.jpg" alt="Glue Gun"> <br>
+                        <div class="itemText">
+                        <h2>Glue Gun</h2> 
+                        <p>Php 60.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Glue Gun</h2> 
+                        <p>Php 60.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Glue Gun', 60.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- hbw glue stick-->                  
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/images.jpg" alt="HBW Glue Stick"> <br>
+                        <div class="itemText">
+                        <h2>HBW Glue Stick</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> HBW Glue Stick</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('HBW Glue Stick', 20.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- ruler--> 
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/ruler.jpg" alt="HBW Ruler"> <br>
+                        <div class="itemText">
+                        <h2>HBW Ruler</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> HBW Ruler</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('HBW Ruler', 20.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- whiteboard marker-->   
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/download.jpg" alt="HBW Whiteboard Marker"> <br>
+                        <div class="itemText">
+                        <h2 id="">HBW Whiteboard Marker</h2> 
+                        <p>Php 35.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> HBW Whiteboard Marker</h2> 
+                        <p>Php 35.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('HBW Whiteboard Marker', 35.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- index card-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/indexCard.webp" alt="Index Card"> <br>
+                        <div class="itemText">
+                        <h2>Index Card</h2> 
+                        <p>Php 4.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Index Card</h2> 
+                        <p>Php 4.00 | pcs</p>
+                        
+                        <p>Select Size:</p>
+
+                        <div id="sizes">
+                            <button class="opt">1/2</button>
+                            <button class="opt">1/4</button>
+                            <button class="opt">1/8</button>
+                        </div>
+
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Index Card', 4.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- mongol pencil-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/pencil.jpg" alt="Mongol Pencil"> <br>
+                        <div class="itemText">
+                        <h2>Mongol Pencil</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Mongol Pencil</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Mongol Pencil', 15.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+                <!-- pastener -->   
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/pastener.jpg" alt="Pastener"> <br>
+                        <div class="itemText">
+                        <h2>Pastener</h2> 
+                        <p>Php 7.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Pastener</h2> 
+                        <p>Php 7.00 | pcs</p>
+
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Pastener', 7.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- pencil eraser-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/eraser.webp" alt="Pencil Eraser"> <br>
+                        <div class="itemText">
+                        <h2>Pencil Eraser</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Pencil Eraser</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Pencil Eraser', 15.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- scotch tape-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/tape.jpg" alt="Scotch Tape"> <br>
+                        <div class="itemText">
+                        <h2>Scotch Tape</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Scotch Tape</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Scotch Tape', 15.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- spring notebook-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/spring.jpg" alt="Spring Notebook"> <br>
+                        <div class="itemText">
+                        <h2>Spring Notebook</h2> 
+                        <p>Php 25.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Spring Notebook</h2> 
+                        <p>Php 25.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Spring Notebook', 25.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                
+
+
+                <!-- thumbtacks-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/thumbtacks.jpeg" alt="Thumbtacks"> <br>
+                        <div class="itemText">
+                        <h2>Thumbtacks</h2> 
+                        <p>Php 10.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Thumbtacks</h2> 
+                        <p>Php 10.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Thumbtacks', 10.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- white folder-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/white.jpg" alt="White Folder"> <br>
+                        <div class="itemText">
+                        <h2>White Folder</h2> 
+                        <p>Php 25.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> White Folder</h2> 
+                        <p>Php 25.00 | pcs</p>
+                        
+                        <p>Select Size:</p>
+
+                        <div id="sizes">
+                            <button class="opt">Long</button>
+                            <button class="opt">Short</button>
+                        </div>
+
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('White Folder', 25.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                 <!-- white liquid glue-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/whiteglue.webp" alt="White Liquid Glue"> <br>
+                        <div class="itemText">
+                        <h2>White Liquid Glue</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> White Liquid Glue</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('White Liquid Glue', 20.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- yellow pad paper-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/paper.jpg" alt="Yellow Pad Paper"> <br>
+                        <div class="itemText">
+                        <h2>Yellow Pad Paper</h2> 
+                        <p>Php 50.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Yellow Pad Paper</h2> 
+                        <p>Php 50.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Yellow Pad Paper', 50.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+   
+        </div>  
+
+    </section>
+
+    <br><br>  <br><br>
+
+   <div id="advertisement">
+
+        <div id="adsText">
+
+            <h1 id="adsTitle"> edit in canva. paste ss here </h1>
+            <h2 id="adsSubTitle"> product reviews from selected ppl</h2>
+            <p id="adsDescription"> -------------</p>
+
+            <button id="adsIMG"><img src="" width=300px height=auto></button>
+
+        </div>
+       
+    </div>
+
+      <br><br>
+
+    <section id="Uniforms">
+
+        <div id="allUniforms">
+
+            <h2 id="AUTitle"> Uniforms </h2>
+
+            <br>
+
+            <div id="Items">
+
+                <!-- boy scout cap-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/boyscoutCap.jpg" alt="Boy Scout Cap"> <br>
+                            <div class="itemText">
+                            <h2>Boy Scout Cap</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Boy Scout Cap</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Boy Scout Cap', 150.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- boy scout pants-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/boyscoutPants.jpg" alt="Boy Scout Pants"> <br>
+                            <div class="itemText">
+                            <h2>Boy Scout Pants</h2> 
+                            <p>Php 300.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Boy Scout Pants</h2> 
+                            <p>Php 300.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Boy Scout Pants', 300.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- boy scout scarf-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/boyscoutScarf.jpg" alt="Boy Scout Scarf"> <br>
+                            <div class="itemText">
+                            <h2>Boy Scout Scarf</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Boy Scout Scarf</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Boy Scout Scarf', 150.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- boy scout t-shirt-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/boyscoutTshirt.jpg" alt="Boy Scout T-Shirt"> <br>
+                            <div class="itemText">
+                            <h2>Boy Scout T-Shirt</h2> 
+                            <p>Php 250.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Boy Scout T-Shirt</h2> 
+                            <p>Php 250.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Boy Scout T-Shirt', 250.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+       
+                <!-- girl scout cap-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/girlscoutCap.jpg" alt="Boy Scout Cap"> <br>
+                            <div class="itemText">
+                            <h2>Girl Scout Cap</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Girl Scout Cap</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Girl Scout Cap', 150.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- girl scout scarf-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/girlscoutScarf.jpg" alt="Girl Scout Scarf"> <br>
+                            <div class="itemText">
+                            <h2>Girl Scout Scarf</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Girl Scout Scarf</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Girl Scout Scarf', 150.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+          
+                <!-- girl scout uni-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/girlscoutUni.jpg" alt="Girl Scout Uniform"> <br>
+                            <div class="itemText">
+                            <h2>Girl Scout Uniform</h2> 
+                            <p>Php 550.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Girl Scout Uniform</h2> 
+                            <p>Php 550.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Girl Scout Uniform', 550.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- male uni pants-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/malePants.png" alt="Male Uniform Pants"> <br>
+                            <div class="itemText">
+                            <h2>Male Uniform Pants</h2> 
+                            <p>Php 350.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Male Uniform Pants</h2> 
+                            <p>Php 350.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Male Uniform Pants', 350.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- male uni polo-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/malePolo.png" alt="Male Uniform Polo"> <br>
+                            <div class="itemText">
+                            <h2>Male Uniform Polo</h2> 
+                            <p>Php 250.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Male Uniform Polo</h2> 
+                            <p>Php 250.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Male Uniform Polo', 250.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- PE pants uniform -->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/PEPants.png" alt="PE Pants Uniform"> <br>
+                            <div class="itemText">
+                            <h2>PE Pants Uniform</h2> 
+                            <p>Php 300.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> PE Pants Uniform</h2> 
+                            <p>Php 300.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('PE Pants Uniform', 300.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- PE Shirt uniform-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/PEShirt.png" alt="PE Shirt Uniform"> <br>
+                            <div class="itemText">
+                            <h2>PE Shirt Uniform</h2> 
+                            <p>Php 250.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> PE Shirt Uniform</h2> 
+                            <p>Php 250.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('PE Shirt Uniform', 250.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- socks-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/socks.jpg" alt="Socks"> <br>
+                            <div class="itemText">
+                            <h2>Socks</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Socks</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Socks', 150.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                  <!-- necktie -->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/ladiesNecktie.webp" alt="Ladies Necktie"> <br>
+                            <div class="itemText">
+                            <h2>Ladies Necktie</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Ladies Necktie</h2> 
+                            <p>Php 150.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Ladies Necktie', 150.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+                
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <br><br><br><br>
+
+    <div id="advertisement">
+
+        <div id="adsText">
+
+            <h1 id="adsTitle"> edit in canva. paste ss here </h1>
+            <h2 id="adsSubTitle"> product reviews from selected ppl</h2>
+            <p id="adsDescription"> -------------</p>
+
+            <button id="adsIMG"><img src="" width=300px height=auto></button>
+
+        </div>
+       
+    </div>
+
+    <br>
+
+   <section id="SchoolSupplies">
+
+        <div id="schoolSupplies">
+
+            <h2 id="SSTitle"> School Supplies </h2>
+
+            <br><br><br>
+
+            <div id="Items">
+
+
+
+
+                <!-- thumbtacks-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/thumbtacks.jpeg" alt="Thumbtacks"> <br>
+                        <div class="itemText">
+                        <h2>Thumbtacks</h2> 
+                        <p>Php 10.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Thumbtacks</h2> 
+                        <p>Php 10.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Thumbtacks', 10.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- flexstick ballpen-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/ballpen.jpg" alt="Ballpen"> <br>
+                        <div class="itemText">
+                        <h2>Ballpen</h2> 
+                        <p>Php 15.00 | pen</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Ballpen</h2> 
+                        <p>Php 15.00 | pen</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Ballpen', 15.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- correction tape-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/correction.jpg" alt="Correction Tape"> <br>
+                            <div class="itemText">
+                            <h2>Correction Tape</h2> 
+                            <p>Php 30.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2>Correction Tape</h2> 
+                            <p>Php 30.00 | pcs</p>
+                            
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Correction Tape', 30.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+
+
+                <!-- yellow pad paper-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/paper.jpg" alt="Yellow Pad Paper"> <br>
+                        <div class="itemText">
+                        <h2>Yellow Pad Paper</h2> 
+                        <p>Php 50.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Yellow Pad Paper</h2> 
+                        <p>Php 50.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Yellow Pad Paper', 50.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- ruler--> 
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/ruler.jpg" alt="HBW Ruler"> <br>
+                        <div class="itemText">
+                        <h2>HBW Ruler</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> HBW Ruler</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('HBW Ruler', 20.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- scotch tape-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/tape.jpg" alt="Scotch Tape"> <br>
+                        <div class="itemText">
+                        <h2>Scotch Tape</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Scotch Tape</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Scotch Tape', 15.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- spring notebook-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/spring.jpg" alt="Spring Notebook"> <br>
+                        <div class="itemText">
+                        <h2>Spring Notebook</h2> 
+                        <p>Php 25.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Spring Notebook</h2> 
+                        <p>Php 25.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Spring Notebook', 25.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- spring notebook-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/paintbrush.jpg" alt="Paint Brush"> <br>
+                        <div class="itemText">
+                        <h2>Paint Brush</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Paint Brush</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Paint Brush', 20.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- crayons-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/crayons.jpg" alt="Crayons`"> <br>
+                            <div class="itemText">
+                            <h2>Crayons</h2> 
+                            <p>Php 50.00 | box</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Crayons</h2> 
+                            <p>Php 50.00 | box</p>
+                            
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Crayons', 50.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+
+
+                <!-- glue gun-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/gluegun.jpg" alt="Glue Gun"> <br>
+                        <div class="itemText">
+                        <h2>Glue Gun</h2> 
+                        <p>Php 60.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Glue Gun</h2> 
+                        <p>Php 60.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Glue Gun', 60.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- whiteboard marker-->   
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/download.jpg" alt="HBW Whiteboard Marker"> <br>
+                        <div class="itemText">
+                        <h2 id="">HBW Whiteboard Marker</h2> 
+                        <p>Php 35.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> HBW Whiteboard Marker</h2> 
+                        <p>Php 35.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('HBW Whiteboard Marker', 35.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- brown folder-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/brown.jpg" alt="Brown Folder"> <br>
+                            <div class="itemText">
+                            <h2>Brown Folder</h2> 
+                            <p>Php 25.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2>Brown Folder</h2> 
+                            <p>Php 25.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+                            <div id="sizes">
+                                <button class="opt">Long</button>
+                                <button class="opt">Short</button>
+                            </div>
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Brown Folder', 25.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+
+
+                <!-- pastener -->   
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/pastener.jpg" alt="Pastener"> <br>
+                        <div class="itemText">
+                        <h2>Pastener</h2> 
+                        <p>Php 7.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Pastener</h2> 
+                        <p>Php 7.00 | pcs</p>
+
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Pastener', 7.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                 <!-- white folder-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/white.jpg" alt="White Folder"> <br>
+                        <div class="itemText">
+                        <h2>White Folder</h2> 
+                        <p>Php 25.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> White Folder</h2> 
+                        <p>Php 25.00 | pcs</p>
+                        
+                        <p>Select Size:</p>
+
+                        <div id="sizes">
+                            <button class="opt">Long</button>
+                            <button class="opt">Short</button>
+                        </div>
+
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('White Folder', 25.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+                 
+               <!-- hbw glue stick-->                  
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/images.jpg" alt="HBW Glue Stick"> <br>
+                        <div class="itemText">
+                        <h2>HBW Glue Stick</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> HBW Glue Stick</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('HBW Glue Stick', 20.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- pencil eraser-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/eraser.webp" alt="Pencil Eraser"> <br>
+                        <div class="itemText">
+                        <h2>Pencil Eraser</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Pencil Eraser</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Pencil Eraser', 15.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- mongol pencil-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/pencil.jpg" alt="Mongol Pencil"> <br>
+                        <div class="itemText">
+                        <h2>Mongol Pencil</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> Mongol Pencil</h2> 
+                        <p>Php 15.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Mongol Pencil', 15.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <!-- white liquid glue-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/whiteglue.webp" alt="White Liquid Glue"> <br>
+                        <div class="itemText">
+                        <h2>White Liquid Glue</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> White Liquid Glue</h2> 
+                        <p>Php 20.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('White Liquid Glue', 20.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+                
+                <!-- assorted acrylic paint-->
+                <div class="flip-card" tabindex="0">
+                        <div class="flip-card-inner">
+                        <!-- Front: Product Image -->
+                        <div class="flip-card-front">
+                            <img src="images/paint.avif" alt="Acrylic Paint"> <br>
+                            <div class="itemText">
+                            <h2>Acrylic Paint</h2> 
+                            <p>Php 45.00 | pcs</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Back: Options -->
+                        <div class="flip-card-back">
+                            <h2> Acrylic Paint</h2> 
+                            <p>Php 45.00 | pcs</p>
+                            
+                            <p>Select Size:</p>
+
+                            <div id="sizes">
+                                <button class="opt">Red</button>
+                                <button class="opt">Blue</button>
+                                <button class="opt">Green</button>
+                                <button class="opt">Yellow</button>
+                                <button class="opt">Purple</button>
+                                <button class="opt">Orange</button>
+                            </div>
+
+                            <p>Quantity:</p>
+                            <input type="number" min="1" value="1">
+                            
+                            <button class="add-to-cart-btn" onclick="addToCart('Acrylic Paint', 45.00)">Add to Cart</button>
+                        </div>
+                        </div>
+                </div>
+
+                   
+
+                <!-- index card-->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/indexCard.webp" alt="Index Card"> <br>
+                        <div class="itemText">
+                        <h2>Index Card</h2> 
+                        <p>Php 4.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2>Index Card</h2> 
+                        <p>Php 4.00 | pcs</p>
+                        
+                        <p>Select Size:</p>
+
+                        <div id="sizes">
+                            <button class="opt">1/2</button>
+                            <button class="opt">1/4</button>
+                            <button class="opt">1/8</button>
+                        </div>
+
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('Index Card', 4.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    
+    </section>
+
+    <br><br><br><br>
+
+
+    <script src="func.js">
+    </script>
+</body>
+</html>
