@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <input type="number" value="1" min="1" id="qty-1">
+
+<button onclick="addToCart('Thumbtacks', 10.00, 'images/thumbtacks.jpeg', 'qty-1')">
+    Add to Cart
+</button>
+
+  <!-- whiteboard marker-->   
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                    <!-- Front: Product Image -->
+                    <div class="flip-card-front">
+                        <img src="images/download.jpg" alt="HBW Whiteboard Marker"> <br>
+                        <div class="itemText">
+                        <h2 id="">HBW Whiteboard Marker</h2> 
+                        <p>Php 35.00 | pcs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Back: Options -->
+                    <div class="flip-card-back">
+                        <h2> HBW Whiteboard Marker</h2> 
+                        <p>Php 35.00 | pcs</p>
+                        
+                        <p>Quantity:</p>
+                        <input type="number" min="1" value="1">
+                        
+                        <button class="add-to-cart-btn" onclick="addToCart('HBW Whiteboard Marker', 35.00)">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+  
+</body>
+</html>

@@ -1,199 +1,9 @@
 
-* {
-  scrollbar-width: none;  /* Firefox */
-  -ms-overflow-style: none;  /* IE/Edge */
-}
-
-/* style of the header elements */
-#header{
-    position: fixed;
-    top: 0;
-    left:0;
-    /* background-color: #0bab4e ; */
-    background-color: #ffffff ;
-    width: 1435px;
-
-    z-index: 9999;
-}
-
-
-
-/* style of the title*/
-#logo{
-    width: 60px;
-    height: 60px;
-}
-
-#title{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-left: 200px;
-}
-
-
-#webName{
-    margin-left: 70px;
-    font-weight: bold;
-    font-size: 200%;
-    position: absolute;
-    display: flex;
-    justify-content: left;
-    color: rgb(0, 0, 0);
-   
-}
-
-
-
-#cart {
-  position: fixed;
-  right: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 5 0px;
-  background: #28a74600;
-  color: rgb(0, 0, 0);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 20px;
-  z-index: 9999;
-}
-
-.cart-badge {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background: red;
-  color: white;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  font-size: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#cart:hover{
-    transform: scale(1.2);    
-    transition: all 0.3s ease; 
-}
-
-.fa{
-  width: 50px;
-}
-
-
-/* style of the categories*/
-#categories{
-    width: 1000px;
-    height: 50px;
-    margin-left: 200px;
-}
-
-#buttons{
-    display:flex;
-    justify-content: left;
-    align-items: center;
-    margin-left: 50px;
-    gap: 20px;
-}
-
-#allButton,
-#uniButton,
-#ssButton{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(78, 175, 65);
-    height: 30px;
-    width: 100px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 10px;
-    font-size: 13px;
-    cursor: pointer;
-}
-
-#allButton:hover,
-#uniButton:hover,
-#ssButton:hover{
-    /*background-color: rgb(97, 216, 81);
-    color: white; */
-    transform: scale(1.05);    
-    transition: all 0.2s ease; 
-}
-
-
-
-/* styles for advertisement*/
-#advertisement{
-    margin-top: 3%;
-    width: 1415px;
-    height: 250px;
-    background-color: rgb(155, 163, 163);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-#adsIMG{
-    margin-left: 0px;
-   
-}
-
-#itemButton img{
-    border-radius: 5%;
-}
-
-
-
-
-/* styles for All Products and Uniforms Title*/
-#APTitle, #AUTitle, #SSTitle{
-    margin-left: 15%;
-
-}
-
-/* styles for Item */
-#Items{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-right: 10%;
-    padding-left: 10%;
-   
-}
-
-#itemButton{
-    width: 15%;
-    height: 20%;
-    border: none;
-    border-radius: 10px;
-    background-image: linear-gradient(white, rgb(94, 155, 86) );
-}
-
-#itemButton:hover{
-    transform: scale(1.2);
-    transition: all 0.3s ease; 
-}
-
-
-
 /* Slide Panel */
     #slide-panel {
       position: fixed;
       top: 0;
-      right: -400px;
+      right: 400px;
       width: 380px;
       height: 100vh;
       background: white;
@@ -208,7 +18,7 @@
     
     .slide-header {
       padding: 20px;
-      background: rgb(78, 175, 65);
+      background: #333;
       color: white;
       display: flex;
       justify-content: space-between;
@@ -234,12 +44,11 @@
       gap: 15px;
       padding: 15px 0;
       border-bottom: 1px solid #eee;
-   
     }
     
     .cart-item-image {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       background: #f5f5f5;
       border-radius: 8px;
     }
@@ -251,17 +60,8 @@
       border-radius: 8px;
     }
     
-    .item-name {
-       margin: 0 0 5px 0; 
-       font-size: 14px;
-     }
-
-  
-    .item-price {
-       margin: 0 0 5px 0; 
-       font-size: 12px; 
-       color: #666;
-       }
+    .item-name { margin: 0 0 5px 0; font-size: 14px; }
+    .item-price { margin: 0 0 5px 0; font-size: 12px; color: #666; }
     
     .quantity-controls {
       display: flex;
@@ -362,7 +162,7 @@
 }
 
 .flip-card-front {
-  background: linear-gradient(to bottom, white, rgb(169, 235, 171));
+  background: linear-gradient(to bottom, white, rgb(200, 230, 201));
 }
 
 .flip-card-back {
